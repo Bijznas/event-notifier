@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+/**
+ * Notification element
+ */
 class Notification extends Component {
 
     render() {

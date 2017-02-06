@@ -4,6 +4,11 @@ import Header from "../header/Header"
 import NotificationDashboard from "../notifications/NotificationDashboard"
 import ProcessDashboard from "../process/ProcessDashboard"
 
+/**
+ * This is the parent class for handling notifications and process flow mocks.
+ *
+ * @author sanjib
+ */
 class Dashboard extends Component {
 
     constructor(props) {
@@ -30,6 +35,11 @@ class Dashboard extends Component {
         );
     }
 
+    /**
+     * Switch the view between the notifications and process.
+     * @param view
+     * @author sanjib
+     */
     renderSelectedView(view){
         if(this.state.currentView === "notifications"){
             return <NotificationDashboard/>;
@@ -39,6 +49,11 @@ class Dashboard extends Component {
 
     }
 
+    /**
+     * Change the tab
+     * @param tab
+     * @author sanjib
+     */
     changeTab(tab){
         this.setState({
             currentView: tab

@@ -39,11 +39,21 @@ class Login extends Component {
         );
     }
 
+    /**
+     * Handle the toggling for login and signup page.
+     * 
+     * @author sanjib
+     */
     _handleClick(e) {
         e.preventDefault();
         $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
     }
 
+    /**
+     * Handle the login into the system.
+     *
+     * @author sanjib
+     */
     _login(e) {
         e.preventDefault();
         var errorMsg = "Username or password missing.";
@@ -53,16 +63,32 @@ class Login extends Component {
             browserHistory.push('/dashboard');
         }
     }
+
+    /**
+     * Render the errors into the dom in case of login failure cases.
+     *
+     * @author sanjib
+     */
     renderErrors() {
         return this.state.errors.map(name => (
             <ErrorMessage key={name} name={name} removeError={this.removeError}/>
         ));
     }
 
+    /**
+     * Add error to the dom.
+     *
+     * @author sanjib
+     */
     addError(newName) {
         this.setState({ errors: [...this.state.errors, newName] });
     }
 
+    /**
+     * Remove error from the dom.
+     *
+     * @author sanjib
+     */
     removeError(removeName) {
         const filteredErrors = this.state.errors.filter(name => {
             return name !== removeName;
