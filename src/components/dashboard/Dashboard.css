@@ -1,0 +1,43 @@
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.mid-content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.mid-content > div{
+    float: left;
+}
+
+.mid-content .left{
+    width: 21%;
+}
+
+.mid-content .right{
+    width: 76%;
+}
+
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
+}
+
+.other-content{
+    border: solid 1px #ddd;
+    margin: 5px;
+    padding: 60px 10px;
+    background: #F9F9F9;
+    text-align: center;
+}
+
+.other-content.long{
+    padding: 100px 10px;
+}
+

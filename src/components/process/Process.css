@@ -1,0 +1,102 @@
+.process-container > div{
+    width: 47.5%;
+    float: left;
+    color: #6AB344;
+    border: solid 1px #ddd;
+    margin: 5px;
+    background: #F9F9F9;
+    text-align: center;
+    font-weight: bold;
+}
+
+.process{
+    padding: 20px 5px;
+}
+
+.process-buttons span{
+    display: block;
+    color: #FFFFFF;
+    float: left;
+    width: 42.5%;
+    margin: 5px;
+    background: #6AB344;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.process-buttons span:hover{
+    background: #EBF4E6;
+    color: #6AB344;
+}
+
+.number-process{
+    font-size: 60px;
+    margin: 20px 0px;
+}
+
+.number-process span{
+    font-size: 12px;
+    display: block;
+    color: #263847;
+}
+
+.run-tag{
+    padding: 2px 10px;
+    background: #6AB344;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.run-tag{
+    padding: 2px 10px;
+    background: #6AB344;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.stop-tag{
+    padding: 2px 10px;
+    background: #CE181F;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.uprocess{
+    padding: 2px 10px;
+    background: #5FD4ED;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-left: 6px;
+}
+
+.sprocess{
+    padding: 2px 10px;
+    background: #5FBA7D;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-left: 6px;
+}
+
+
+span.pid{
+    color: black;
+    margin-left: 10px;
+}
+
+.but-stop{
+    padding: 5px 14px;
+    margin-top: 10px;
+    background: #CE181F;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.but-start{
+    padding: 5px 14px;
+    margin-top: 10px;
+    background: #6AB344;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
