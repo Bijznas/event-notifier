@@ -23,7 +23,7 @@ class ProcessDashboard extends Component {
                             {this.state.processCount.user}<span>process running</span>
                         </div>
                         <div className="clearfix process-buttons">
-                            <span onClick={()=>{this.simulateAProcess("USER")}}>Simulate a user process</span>
+                            <span onClick={()=>{this.simulateAProcess("USER")}}>Simulate a user process >>></span>
                             <span onClick={()=>{alert("Yet to be implemented");}}>Terminate all user process</span>
                         </div>
 
@@ -34,7 +34,7 @@ class ProcessDashboard extends Component {
                             {this.state.processCount.system}<span>process running</span>
                         </div>
                         <div className="clearfix process-buttons">
-                            <span onClick={()=>{this.simulateAProcess("SYSTEM")}}>Simulate a System process</span>
+                            <span onClick={()=>{this.simulateAProcess("SYSTEM")}}>Simulate a System process >>></span>
                             <span onClick={()=>{alert("Yet to be implemented");}}>Terminate all System process</span>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ class ProcessDashboard extends Component {
         });
 
     }
-    
+
     componentWillMount(){
         var url = "http://localhost:8080/api/processes";
         Request.get(url).then((response) => {
